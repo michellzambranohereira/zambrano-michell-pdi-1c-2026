@@ -1,1 +1,1 @@
-# Tecnicas-de-Procesamiento-Digital-de-Imagenes
+# Técnicas de Procesamiento Digital de Imágenes
