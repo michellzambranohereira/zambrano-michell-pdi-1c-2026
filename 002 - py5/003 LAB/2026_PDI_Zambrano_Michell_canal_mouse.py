@@ -55,6 +55,7 @@ def draw():
 
 py5.run_sketch()
 
+# Pregutas:
 #1. Suprimir el canal rojo por completo: Reemplazá r = r * factor_rojo por r = 0. 
 #La imagen de la derecha debería mostrar solo los canales verde y azul. 
 #¿Qué pasa con las zonas que eran originalmente rojas?
