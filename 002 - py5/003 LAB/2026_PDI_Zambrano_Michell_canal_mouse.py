@@ -5,7 +5,7 @@ import py5
 def setup():
     global img
     py5.size(800, 400)
-    img = py5.load_image("img/134160935775034328.jpg")
+    img = py5.load_image(r"C:\Users\usuario\zambrano-michell-pdi-1c-2026\002 - py5\003 LAB\134157563112116165.jpg")
     img.resize(400, 400)
 
 def draw():
@@ -37,7 +37,9 @@ def draw():
             b = py5.blue(pixel)
 
             # Modificar solo el canal rojo según el mouse
-            r = r * factor_rojo
+            g = g * factor_rojo
+            factor_azul = py5.remap(py5.mouse_y, 0, py5.height, 0, 2.5)
+            b = b * factor_azul
 
             # Limitar el valor para que no supere 255
             # Un valor mayor haría que py5 lo interprete incorrectamente
@@ -46,9 +48,24 @@ def draw():
 
             # Calcular el índice del mismo píxel en el lienzo (desplazado 400px a la derecha)
             indice_canvas = (x + 400) + y * py5.width
-            py5.pixels[indice_canvas] = py5.color(r, g, b)
+            py5.pixels[indice_canvas] = py5.color(b, g, r)
 
     # Aplicar los cambios al lienzo
     py5.update_pixels()
 
 py5.run_sketch()
+
+#1. Suprimir el canal rojo por completo: Reemplazá r = r * factor_rojo por r = 0. 
+#La imagen de la derecha debería mostrar solo los canales verde y azul. 
+#¿Qué pasa con las zonas que eran originalmente rojas?
+#Las zonas originalmente rojas ahora tienen tonos verdes o azules, y se ve más oscura la imagen en general.
+
+#2. Intercambiar canales: Cambiá py5.color(r, g, b) por py5.color(b, g, r). 
+#Esto intercambia el canal rojo y el azul. Los cielos de color azul deberían volverse rojizos. 
+#Pensá qué implica esto: los colores son datos, y cambiar su posición genera una imagen que parece incorrecta pero matemáticamente es válida.
+#Al hacer el cambio a bgr, el color cambia totalmente, pero los datos siguen siendo válidos.
+
+#3. Controlar un canal distinto: En lugar de modificar r, aplicá el factor al canal verde (g = g * factor). 
+#Considerá también crear un segundo factor que use la posición Y del mouse para controlar el azul.
+#Al probar esto de visualizó que dependiendo de cómo se mueva el mouse los colores se mezclan, si es en forma horizontal, la imagen se vuelve roja
+#mientras que si se mueve el mouse de forma vertical, la imagen toma un color verde muy brillante.
