@@ -17,5 +17,5 @@ Este trabajo práctico propone integrar:
 - Composición visual
 - Análisis técnico de la imagen
 - postprocesamiento digital
-- Reflexión crítica sobre la construcción visual.
+- Reflexión crítica sobre la construcción visual
 
