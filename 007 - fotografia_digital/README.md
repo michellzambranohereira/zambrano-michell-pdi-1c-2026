@@ -2,7 +2,7 @@
 
 Alumna: Michell Zambrano
 
-Materia: Técnicas de Procesamiento de Imágenes Digitales
+Materia: Técnicas de Procesamiento Digital de Imágenes
 
 Fecha: 13/05/2026
 
