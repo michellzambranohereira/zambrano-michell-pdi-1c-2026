@@ -1,9 +1,13 @@
 Trabajo Práctico 006 — Fotografía Digital
 
 De la cámara oscura a la imagen intencional
+
 Alumna: Michell Zambrano
+
 Materia: Técnicas de Procesamiento de Imágenes Digitales
+
 Fecha: 13/05/2026
+
 Docente: Matías Barreto
 
 Este trabajo práctico integra:
