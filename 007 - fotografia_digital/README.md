@@ -1,4 +1,4 @@
-Trabajo Práctico 006 — Fotografía Digital: De la cámara oscura a la imagen intencional
+**Trabajo Práctico 006 — Fotografía Digital: De la cámara oscura a la imagen intencional**
 
 Alumna: Michell Zambrano
 
