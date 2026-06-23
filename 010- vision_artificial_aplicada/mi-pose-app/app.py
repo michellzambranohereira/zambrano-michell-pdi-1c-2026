@@ -149,4 +149,4 @@ with gr.Blocks(title="Detector de Pose") as aplicacion:
 
 
 if __name__ == "__main__":
-    aplicacion.launch()
+    aplicacion.launch(server_name="0.0.0.0", server_port=7860)
