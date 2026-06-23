@@ -1,0 +1,5 @@
+gradio
+mediapipe==0.10.14
+numpy==1.26.4
+opencv-python-headless
+protobuf==4.25.3
